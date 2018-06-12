@@ -12,12 +12,8 @@ const style = {
   verticalAlign: "top",
 }
 
-class Square extends Component {
-  render() {
-    return (
-      <div style={style} onClick={this.props.handleClick}>{this.props.value}</div>
-    )
+export default class Square extends Component {
+  render(){
+    return <div style={style} onClick={this.props.handleClick}>{this.props.value}</div>
   }
 }
-
-export default Square;
