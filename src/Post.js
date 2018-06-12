@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 
 class Post extends Component {
+
   render() {
-    return <h1>{'Blog ' + this.props.match.params.postid}</h1>
+    return (
+      <div>
+        <h1>Post</h1>
+        {this.props.match.params.postid}
+      </div>
+    );
   }
+
 }
 
 export default Post;
